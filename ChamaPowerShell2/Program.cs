@@ -14,12 +14,18 @@ namespace ChamaPowerShell2
         {
             try
             {
-                Executor.Executar(@"C:\app\splash.ps1");
+                Executor.Executar(@"C:\app\console.asm");
             }
             catch(FileNotFoundException e)
             {
                 Console.WriteLine("Ocorreu um erro.");
                 Console.WriteLine(e.Message);
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Ocorreu um erro.");
+                Console.WriteLine(e.Message);
+
             }
             Console.ReadLine();
             
